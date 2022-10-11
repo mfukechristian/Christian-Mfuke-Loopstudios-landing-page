@@ -1,0 +1,419 @@
+/*font style*/
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+  font-size: 1rem;
+  color: hsl(0, 0%, 41%);
+  width: 100%;
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0;
+  color: hsl(0, 0%, 0%);
+  line-height: 30px;
+}
+
+#main-container {
+  width: 100%;
+}
+
+.header-wrapper,
+#showcase,
+#creation {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*header-style*/
+#header-container {
+  background-image: url(./images/mobile/image-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: hsl(0, 0%, 100%);
+}
+
+.logo-container {
+  cursor: pointer;
+}
+
+.logo-container img {
+  width: 150px;
+}
+
+nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav img {
+  width: 30px;
+}
+
+.header-nav-container {
+  display: none;
+}
+
+.hero-container {
+  border: 2px solid hsl(0, 0%, 100%);
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.hero-container h1 {
+  width: 80%;
+  font-size: 2.5rem;
+}
+
+/*showcase*/
+#showcase {
+  margin-top: 100px;
+  min-height: 70vh;
+}
+
+.showcase-picture {
+  width: 100%;
+  height: 250px;
+  background-image: url(./images/mobile/image-interactive.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.showcase-content {
+  text-align: center;
+  line-height: 25px;
+}
+
+/*Our Creation*/
+#creation {
+  text-align: center;
+}
+.card {
+  text-align: left;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(1) {
+  background-image: url(./images/mobile/image-deep-earth.jpg);
+}
+
+.card:nth-child(2) {
+  background-image: url(./images/mobile/image-night-arcade.jpg);
+}
+
+.card:nth-child(3) {
+  background-image: url(./images/mobile/image-soccer-team.jpg);
+}
+
+.card:nth-child(4) {
+  background-image: url(./images/mobile/image-grid.jpg);
+}
+
+.card:nth-child(5) {
+  background-image: url(./images/mobile/image-from-above.jpg);
+}
+
+.card:nth-child(6) {
+  background-image: url(./images/mobile/image-pocket-borealis.jpg);
+}
+
+.card:nth-child(7) {
+  background-image: url(./images/mobile/image-curiosity.jpg);
+}
+
+.card:nth-child(8) {
+  background-image: url(./images/mobile/image-fisheye.jpg);
+}
+
+.card p {
+  position: absolute;
+  width: 100px;
+  left: 20px;
+  bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid hsl(0, 0%, 0%);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 50px auto;
+  background-color: transparent;
+  font-family: "Alata", sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+
+footer {
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.8rem;
+}
+
+.footer-nav-container li {
+  margin: 20px 0;
+}
+
+.social-icons img {
+  margin: 10px;
+}
+
+.attribution {
+  color: hsl(0, 0%, 41%);
+}
+
+.attribution p {
+  margin: 10px 0;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+ul.header-nav-container.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.header-nav-container.active li {
+  margin: 20px 0;
+}
+
+/*hamburger menu*/
+.active {
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  list-style: none;
+  padding-top: 20px;
+  display: block;
+  background-color: hsl(0, 0%, 0%);
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 50px;
+}
+
+@media (min-width: 800px) {
+  section {
+    min-height: 70vh;
+  }
+
+  #header-container {
+    background-image: url(./images/desktop/image-hero.jpg);
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .header-nav-container {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .header-nav-container li {
+    margin: 0 20px;
+  }
+
+  .hero-container {
+    width: 50%;
+  }
+
+  .hero-container h1 {
+    font-size: 3rem;
+    width: 90%;
+  }
+
+  #showcase,
+  #creation {
+    position: relative;
+  }
+
+  .showcase-picture {
+    background-image: url(./images/desktop/image-interactive.jpg);
+    width: 60%;
+    height: 400px;
+  }
+
+  .showcase-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 300px;
+    text-align: left;
+    background-color: hsl(0, 0%, 100%);
+    padding: 50px;
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .creation-pictures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .card {
+    min-height: 500px;
+    font-size: 1.2rem;
+  }
+  #creation {
+    padding-top: 100px;
+  }
+  #creation h3 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 50%;
+  }
+
+  #creation button {
+    position: absolute;
+    top: -30px;
+    right: 50px;
+    height: 30px;
+  }
+
+  footer,
+  .footer-nav-container {
+    display: flex;
+  }
+  footer {
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    text-align: left;
+  }
+
+  .footer-nav-container {
+    list-style: none;
+  }
+  .footer-nav-container li {
+    margin-right: 20px;
+  }
+  .attribution-container {
+    text-align: right;
+  }
+
+  card:nth-child(1) {
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+  }
+
+  .card:nth-child(2) {
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+  }
+
+  .card:nth-child(3) {
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+  }
+
+  .card:nth-child(4) {
+    background-image: url(./images/desktop/image-grid.jpg);
+  }
+
+  .card:nth-child(5) {
+    background-image: url(./images/desktop/image-from-above.jpg);
+  }
+
+  .card:nth-child(6) {
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+  }
+
+  .card:nth-child(7) {
+    background-image: url(./images/desktop/image-curiosity.jpg);
+  }
+
+  .card:nth-child(8) {
+    background-image: url(./images/desktop/image-fisheye.jpg);
+  }
+
+  li.nav-footer-link {
+    position: relative;
+    margin: 20px;
+  }
+
+  li.nav-footer-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  li.nav-footer-link:hover:after {
+    width: 100%;
+    left: 0;
+  }
+}
